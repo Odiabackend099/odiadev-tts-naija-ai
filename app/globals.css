@@ -1,0 +1,6 @@
+:root{--bg:#0b1220;--card:#0f172a;--text:#e2e8f0;--brand:#0ea5e9}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,sans-serif}
+.container{max-width:960px;margin:0 auto;padding:24px}.card{background:#0f172a;border-radius:16px;padding:16px}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.btn{background:#0ea5e9;color:#fff;border:0;padding:10px 16px;border-radius:12px}
+.input,textarea,select{background:#0b1220;color:var(--text);border:1px solid #1f2937;padding:10px;border-radius:12px;width:100%}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}@media(min-width:900px){.grid{grid-template-columns:2fr 1fr}}audio{width:100%}
