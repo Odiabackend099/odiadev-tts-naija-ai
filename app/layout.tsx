@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import VoiceWidgetClient from '../components/VoiceWidgetClient';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 export const metadata: Metadata = {
   title: 'Protect.NG CrossAI - Voice-First Emergency Platform',
@@ -38,7 +39,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
         
         <main>
-          {children}
+          <ErrorBoundary>
+            {children}
+          </ErrorBoundary>
         </main>
         
         <footer className="footer">
@@ -87,7 +90,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
         
-        <VoiceWidgetClient />
+        <ErrorBoundary fallback={
+          <div style={{
+            position: 'fixed',
+            right: 20,
+            bottom: 20,
+            padding: 12,
+            backgroundColor: '#DC2626',
+            color: '#ecf5e4',
+            borderRadius: 8,
+            fontSize: 12
+          }}>
+            Voice widget error. <a href="/report" style={{ color: '#eaf6c3' }}>Use /report</a>
+          </div>
+        }>
+          <VoiceWidgetClient />
+        </ErrorBoundary>
         
         <script 
           dangerouslySetInnerHTML={{
