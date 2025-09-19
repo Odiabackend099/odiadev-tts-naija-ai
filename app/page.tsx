@@ -49,7 +49,7 @@ export default function HomePage() {
               <div style={{ textAlign: 'center', color: 'var(--muted-3)' }}>
                 <div style={{ fontSize: '48px', marginBottom: '1rem' }}>🎤</div>
                 <p>Interactive Voice Assistant</p>
-                <p style={{ fontSize: '14px', opacity: 0.7 }}>Click "Try Voice Assistant" to experience</p>
+                <p style={{ fontSize: '14px', opacity: 0.7 }}>Click &quot;Try Voice Assistant&quot; to experience</p>
               </div>
             </div>
           </div>
