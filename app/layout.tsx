@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import VoiceWidgetClient from '../components/VoiceWidgetClient';
 
 export const metadata: Metadata = {
   title: 'Protect.NG CrossAI - Voice-First Emergency Platform',
@@ -20,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="container">
             <div className="header-content">
               <Link href="/" className="logo">
-                Protect.NG CrossAI
+                <img src="/assets/brand/logo.svg" alt="Protect.NG CrossAI" style={{ height: '32px' }} />
               </Link>
               <nav className="nav">
                 <Link href="/" className="nav-link">Home</Link>
@@ -85,6 +86,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </footer>
+        
+        <VoiceWidgetClient />
         
         <script 
           dangerouslySetInnerHTML={{
