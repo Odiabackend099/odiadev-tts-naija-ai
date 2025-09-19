@@ -1,0 +1,6 @@
+{
+  "pwa": { "minScore": 0.9 },
+  "performance": { "minScore": 0.85 },
+  "accessibility": { "minScore": 0.9 },
+  "best-practices": { "minScore": 0.9 }
+}
