@@ -9,7 +9,7 @@ export default function HomePage() {
           <div className="grid hero-grid">
             <div className="hero-content">
               <h1>
-                Nigeria's First 
+                Nigeria&apos;s First 
                 <br />Voice-Led Emergency 
                 <br />Response Platform
               </h1>
